@@ -1,0 +1,242 @@
+[
+    {
+      "type": "h2",
+      "label": "Robot Dimensions",
+      "id": "dimensionHeader"
+    },
+    {
+      "type": "slider",
+      "label": "robot width with bumpers(inches)",
+      "id": "width",
+      "options": {
+        "min": 0,
+        "max": 33,
+        "step": 1
+      }
+    },
+    {
+      "type": "slider",
+      "label": "robot length with bumpers(inches)",
+      "id": "length",
+      "options": {
+        "min": 0,
+        "max": 43,
+        "step": 1
+      }
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "h2",
+      "label": "Picking Up and Placing Cones and Cubes",
+      "id": "handlingConesCubes"
+    },
+    {
+      "type": "checkbox",
+      "label": "Can they pick up from the single substation?",
+      "id": "pickUpSingleSub"
+    },
+    {
+      "type": "checkbox",
+      "label": "Can they pick up from the double substation?",
+      "id": "pickUpDoubleSub"
+    },
+    {
+      "type": "checkbox",
+      "label": "Can they pick up from the ground?",
+      "id": "pickUpGround"
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "h2",
+      "label": "Can they place ...",
+      "id": "canPlace"
+    },
+    {
+      "type": "h3",
+      "label": "Cones?",
+      "id": "canPlaceCones"
+    },
+    {
+      "type": "checkbox",
+      "label": "Low",
+      "id": "placeConeLow"
+    },
+    {
+      "type": "checkbox",
+      "label": "Medium",
+      "id": "placeConeMed"
+    },
+    {
+      "type": "checkbox",
+      "label": "High",
+      "id": "placeConeHigh"
+    },
+    {
+      "type": "h3",
+      "label": "Cubes?",
+      "id": "canPlaceCubes"
+    },
+    {
+      "type": "checkbox",
+      "label": "Low",
+      "id": "placeCubeLow"
+    },
+    {
+      "type": "checkbox",
+      "label": "Medium",
+      "id": "placeCubeMed"
+    },
+    {
+      "type": "checkbox",
+      "label": "High",
+      "id": "placeCubeHigh"
+    },
+    {
+      "type":"spacer"
+    },
+    {
+      "type": "h2",
+      "label": "Cycles",
+      "id": "cycleHeader"
+    },
+    {
+      "type": "checkbox",
+      "label": "Can cycle over charge station?",
+      "id": "chargecycle"
+    },
+    {
+      "type": "multiselect",
+      "label": "cycling time",
+      "options": [
+        "<10 : Super Fast",
+        "10-15 : Fast",
+        "15-25 : Medium",
+        "25+ : Slow"
+      ],
+      "id": "cycletimes"
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "h2",
+      "label": "Defence",
+      "id": "defenceheader"
+    },
+    {
+      "type": "checkbox",
+      "label": "Willing to do defence?",
+      "id": "defence"
+    },
+    {
+      "type": "multiselect",
+      "label": "weight",
+      "options": [
+        "0-95 lbs : light",
+        "95-115 lbs : medium",
+        "115-125 lbs : heavy"
+      ],
+      "id": "defence weight"
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "h2",
+      "label": "Backup plans",
+      "id": "backup header"
+    },
+    {
+      "type": "checkbox",
+      "label": "Have a backup plan incase something breaks?",
+      "id": "breakageBackup"
+    },
+    {
+      "type": "checkbox",
+      "label": "Willing to modify robot to work better with alliance?",
+      "id": "optimizeBackup"
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "h2",
+      "label": "Where Can They Start In Auto?(don't select anything if no auto)",
+      "id": "whereStartAuto"
+    },
+    {
+      "type": "checkbox",
+      "label": "Near The Outer Grid?",
+      "id": "outerGridAuto"
+    },
+    {
+      "type": "checkbox",
+      "label": "Near The Co-op Grid?",
+      "id": "coopGridAuto"
+    },
+    {
+      "type": "checkbox",
+      "label": "Near The Inner Grid?",
+      "id": "innerGridAuto"
+    },
+    {
+      "type":"spacer"
+    },
+    {
+      "type": "h2",
+      "label": "Endgame",
+      "id": "endgame"
+    },
+    {
+      "type": "multiselect",
+      "label": "Community / Charging station",
+      "options": [
+        "can't",
+        "park",
+        "Dock",
+        "Engage"
+      ],
+      "id": "endgameChargingStation"
+    },
+    {
+      "type":"spacer"
+    },
+    {
+      "type": "h2",
+      "label": "Others",
+      "id": "otherheader"
+    },
+    {
+      "type": "h3",
+      "label": "Robot",
+      "id": "robotheader"
+    },
+    {
+      "type": "textblock",
+      "label": "Robot Name",
+      "id": "name"
+    },
+    {
+      "type": "h3",
+      "label": "Personal(DO NOT ask to team)",
+      "id": "personalheader"
+    },
+    {
+      "type": "multiselect",
+      "label": "How did you like the team?",
+      "options": [
+      "Hate them",
+      "Strongly dislike",
+      "dislike",
+      "neither",
+      "like",
+      "Strongly like",
+      "Love to work with"
+      ],
+      "id": "teamPreference"
+    }
+  ]

@@ -1,0 +1,983 @@
+[
+    {
+      "type": "derived",
+      "operations": [
+        {
+          "operator": "multiply",
+          "operands": [
+            "didCommunity",
+            3
+          ],
+          "as": "community"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "autoConesHigh",
+            6
+          ],
+          "as": "autoConesH"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "autoCubesHigh",
+            6
+          ],
+          "as": "autoCubesH"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "autoConesMid",
+            4
+          ],
+          "as": "autoConesM"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "autoCubesMid",
+            4
+          ],
+          "as": "autoCubesM"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "autoConesLow",
+            3
+          ],
+          "as": "autoConesL"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "autoCubesLow",
+            3
+          ],
+          "as": "autoCubesL"
+        },
+        {
+          "operator": "multiselect",
+          "id": "autoChargingStation",
+          "quantifiers": {
+            "N/A": 0,
+            "Docked": 8,
+            "Engaged": 12
+          },
+          "as": "autoBalance"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "teleopConesHigh",
+            5
+          ],
+          "as": "teleopConesH"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "teleopCubesHigh",
+            5
+          ],
+          "as": "teleopCubesH"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "teleopConesMid",
+            3
+          ],
+          "as": "teleopConesM"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "teleopCubesMid",
+            3
+          ],
+          "as": "teleopCubesM"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "teleopConesLow",
+            2
+          ],
+          "as": "teleopConesL"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "teleopCubesLow",
+            2
+          ],
+          "as": "teleopCubesL"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "totalAllianceLinks",
+            1.66667
+          ],
+          "as": "linkShare"
+        },
+        {
+          "operator": "multiselect",
+          "id": "endgameChargingStation",
+          "quantifiers": {
+            "N/A": 0,
+            "Parked": 2,
+            "Docked": 6,
+            "Engaged": 10
+          },
+          "as": "endgameBalance"
+        },
+        {
+          "operator": "sum",
+          "operands": [
+            "$community",
+            "$autoConesL",
+            "$autoCubesL",
+            "$autoConesM",
+            "$autoCubesM",
+            "$autoConesH",
+            "$autoCubesH",
+            "$autoBalance",
+            "$teleopConesL",
+            "$teleopCubesL",
+            "$teleopConesM",
+            "$teleopCubesM",
+            "$teleopConesH",
+            "$teleopCubesH",
+            "$linkShare",
+            "$endgameBalance"
+          ]
+        }
+      ],
+      "display_as": "number",
+      "label": "Total contributed points",
+      "id": "contributedPoints"
+    },
+    {
+      "type": "derived",
+      "operations": [
+        {
+          "operator": "multiply",
+          "operands": [
+            "didCommunity",
+            3
+          ],
+          "as": "community"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "autoConesHigh",
+            6
+          ],
+          "as": "autoConesH"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "autoCubesHigh",
+            6
+          ],
+          "as": "autoCubesH"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "autoConesMid",
+            4
+          ],
+          "as": "autoConesM"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "autoCubesMid",
+            4
+          ],
+          "as": "autoCubesM"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "autoConesLow",
+            3
+          ],
+          "as": "autoConesL"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "autoCubesLow",
+            3
+          ],
+          "as": "autoCubesL"
+        },
+        {
+          "operator": "multiselect",
+          "id": "autoChargingStation",
+          "quantifiers": {
+            "N/A": 0,
+            "Docked": 8,
+            "Engaged": 12
+          },
+          "as": "autoBalance"
+        },
+        {
+          "operator": "sum",
+          "operands": [
+            "$community",
+            "$autoConesH",
+            "$autoConesM",
+            "$autoConesL",
+            "$autoCubesH",
+            "$autoCubesM",
+            "$autoCubesL",
+            "$autoBalance"
+          ]
+        }
+      ],
+      "display_as": "number",
+      "label": "Total Auto Points",
+      "id": "totalAutoPoints"
+    },
+    {
+      "type": "derived",
+      "operations": [
+        {
+          "operator": "multiply",
+          "operands": [
+            "teleopConesHigh",
+            5
+          ],
+          "as": "teleopConesH"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "teleopCubesHigh",
+            5
+          ],
+          "as": "teleopCubesH"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "teleopConesMid",
+            3
+          ],
+          "as": "teleopConesM"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "teleopCubesMid",
+            3
+          ],
+          "as": "teleopCubesM"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "teleopConesLow",
+            2
+          ],
+          "as": "teleopConesL"
+        },
+        {
+          "operator": "multiply",
+          "operands": [
+            "teleopCubesLow",
+            2
+          ],
+          "as": "teleopCubesL"
+        },
+        {
+          "operator": "sum",
+          "operands": [
+            "$teleopConesH",
+            "$teleopConesM",
+            "$teleopConesL",
+            "$teleopCubesH",
+            "$teleopCubesM",
+            "$teleopCubesL"
+          ]
+        }
+      ],
+      "display_as": "number",
+      "label": "Total Teleop Points",
+      "id": "totalTeleopPoints"
+    },
+    {
+      "type": "derived",
+      "operations": [
+        {
+          "operator": "multiply",
+          "operands": [
+            "totalAllianceLinks",
+            1.66667
+          ],
+          "as": "linkShare"
+        },
+        {
+          "operator": "multiselect",
+          "id": "endgameChargingStation",
+          "quantifiers": {
+            "N/A": 0,
+            "Parked": 2,
+            "Docked": 6,
+            "Engaged": 10
+          },
+          "as": "endgameBalance"
+        },
+        {
+          "operator": "sum",
+          "operands": [
+            "$linkShare",
+            "$endgameBalance"
+          ]
+        }
+      ],
+      "display_as": "number",
+      "label": "Total Endgame Points",
+      "id": "totalEndgamePoints"
+    },
+    {
+      "type": "derived",
+      "operations": [
+        {
+          "operator": "sum",
+          "operands": [
+            "autoConesHigh",
+            "autoConesMid",
+            "autoConesLow",
+            "autoCubesHigh",
+            "autoCubesMid",
+            "autoCubesLow"
+          ]
+        }
+      ],
+      "display_as": "number",
+      "label": "Total Auto Pieces",
+      "id": "totalAutoPieces"
+    },
+    {
+      "type": "derived",
+      "operations": [
+        {
+          "operator": "sum",
+          "operands": [
+            "teleopConesHigh",
+            "teleopConesMid",
+            "teleopConesLow",
+            "teleopCubesHigh",
+            "teleopCubesMid",
+            "teleopCubesLow"
+          ]
+        }
+      ],
+      "display_as": "number",
+      "label": "Total Teleop Pieces",
+      "id": "totalTeleopPieces"
+    },
+    {
+      "type": "derived",
+      "operations": [
+        {
+          "operator": "sum",
+          "operands": [
+            "autoConesHigh",
+            "autoConesMid",
+            "autoConesLow",
+            "autoCubesHigh",
+            "autoCubesMid",
+            "autoCubesLow",
+            "teleopConesHigh",
+            "teleopConesMid",
+            "teleopConesLow",
+            "teleopCubesHigh",
+            "teleopCubesMid",
+            "teleopCubesLow"
+          ]
+        }
+      ],
+      "display_as": "number",
+      "label": "Total Pieces",
+      "id": "totalPieces"
+    },
+    {
+      "type": "h2",
+      "label": "Autonomous",
+      "id": "lblAuto"
+    },
+    {
+      "type": "checkbox",
+      "label": "Did they leave community?",
+      "id": "didCommunity"
+    },
+    {
+      "type": "h3",
+      "label": "Cones",
+      "id": "lblAutoCones"
+    },
+    {
+      "type": "counterallownegative",
+      "label": "Cones scored high",
+      "id": "autoConesHigh"
+    },
+    {
+      "type": "counterallownegative",
+      "label": "Cones scored mid",
+      "id": "autoConesMid"
+    },
+    {
+      "type": "counterallownegative",
+      "label": "Cones scored low",
+      "id": "autoConesLow"
+    },
+    {
+      "type": "h3",
+      "label": "Cubes",
+      "id": "lblAutoCubes"
+    },
+    {
+      "type": "counterallownegative",
+      "label": "Cubes scored high",
+      "id": "autoCubesHigh"
+    },
+    {
+      "type": "counterallownegative",
+      "label": "Cubes scored mid",
+      "id": "autoCubesMid"
+    },
+    {
+      "type": "counterallownegative",
+      "label": "Cubes scored low",
+      "id": "autoCubesLow"
+    },
+    {
+      "type": "h3",
+      "label": "Coopertition",
+      "id": "lblAutoCoopertition"
+    },
+    {
+      "type": "counterallownegative",
+      "label": "Coopertition scores",
+      "id": "autoCoopertition"
+    },
+    {
+      "type": "multiselect",
+      "label": "Charging station status",
+      "options": [
+        "N/A",
+        "Docked",
+        "Engaged"
+      ],
+      "id": "autoChargingStation"
+    },
+    {
+      "type": "derived",
+      "operations": [
+        {
+          "operator": "max",
+          "operands": [
+            "chargingTimeStart",
+            "chargingTimeEnd"
+          ],
+          "as": "useChargingTime"
+        },
+        {
+          "operator": "subtract",
+          "operands": [
+            135,
+            "$useChargingTime"
+          ],
+          "as": "timeWithoutCharging"
+        },
+        {
+          "operator": "sum",
+          "operands": [
+            "teleopConesHigh",
+            "teleopConesMid",
+            "teleopConesLow",
+            "teleopCubesHigh",
+            "teleopCubesMid",
+            "teleopCubesLow"
+          ],
+          "as": "totalTeleop"
+        },
+        {
+          "operator": "divide",
+          "operands": [
+            "$timeWithoutCharging",
+            "$totalTeleop"
+          ],
+          "as": "interimCycleTime"
+        },
+        {
+          "operator": "condition",
+          "operands": [
+            "$interimCycleTime",
+            "$interimCycleTime",
+            160
+          ],
+          "as": "cycleTime"
+        },
+        {
+          "operator": "log",
+          "operands": [
+            "$cycleTime",
+            1.4142135623731
+          ],
+          "as": "logFactor"
+        },
+        {
+          "operator": "subtract",
+          "operands": [
+            14.6464466094067,
+            "$logFactor"
+          ]
+        }
+      ],
+      "display_as": "number",
+      "label": "Cycle Speed Factor",
+      "id": "cycleSpeedFactor"
+    },
+    {
+      "type": "derived",
+      "operations": [
+        {
+          "operator": "sum",
+          "operands": [
+            "autoConesHigh",
+            "autoConesMid",
+            "autoConesLow",
+            "teleopConesHigh",
+            "teleopConesMid",
+            "teleopConesLow"
+          ]
+        }
+      ],
+      "display_as": "number",
+      "label": "Total Cones Scored",
+      "id": "totalConesScored"
+    },
+    {
+      "type": "derived",
+      "operations": [
+        {
+          "operator": "sum",
+          "operands": [
+            "autoCubesHigh",
+            "autoCubesMid",
+            "autoCubesLow",
+            "teleopCubesHigh",
+            "teleopCubesMid",
+            "teleopCubesLow"
+          ]
+        }
+      ],
+      "display_as": "number",
+      "label": "Total Cubes Scored",
+      "id": "totalCubesScored"
+    },
+    {
+      "type": "derived",
+      "operations": [
+        {
+          "operator": "sum",
+          "operands": [
+            "teleopConesHigh",
+            "teleopCubesHigh",
+            "autoConesHigh",
+            "autoCubesHigh"
+          ]
+        }
+      ],
+      "display_as": "number",
+      "label": "Total High Pieces",
+      "id": "totalHighPieces"
+    },
+    {
+      "type": "derived",
+      "operations": [
+        {
+          "operator": "sum",
+          "operands": [
+            "teleopConesMid",
+            "teleopCubesMid",
+            "autoConesMid",
+            "autoCubesMid"
+          ]
+        }
+      ],
+      "display_as": "number",
+      "label": "Total Mid Pieces",
+      "id": "totalMidPieces"
+    },
+    {
+      "type": "derived",
+      "operations": [
+        {
+          "operator": "sum",
+          "operands": [
+            "teleopConesLow",
+            "teleopCubesLow",
+            "autoConesLow",
+            "autoCubesLow"
+          ]
+        }
+      ],
+      "display_as": "number",
+      "label": "Total Low Pieces",
+      "id": "totalLowPieces"
+    },
+    {
+      "type": "derived",
+      "operations": [
+        {
+          "operator": "sum",
+          "operands": [
+            "teleopCoopertition",
+            "autoCoopertition"
+          ]
+        }
+      ],
+      "display_as": "number",
+      "label": "Total Co-op Pieces",
+      "id": "totalCoopPieces"
+    },
+    {
+      "type": "derived",
+      "operations": [
+        {
+          "operator": "divide",
+          "operands": [
+            "totalAllianceLinks",
+            3
+          ]
+        }
+      ],
+      "display_as": "number",
+      "label": "Links Per Match",
+      "id": "linksPerMatch"
+    },
+    {
+      "type": "derived",
+      "operations": [
+        {
+          "operator": "subtract",
+          "operands": [
+            "chargingTimeStart",
+            "chargingTimeEnd"
+          ],
+          "as": "chargingTime"
+        },
+        {
+          "operator": "abs",
+          "operands": [
+            "$chargingTime"
+          ],
+          "as": "absChargingTime"
+        },
+        {
+          "operator": "max",
+          "operands": [
+            "$absChargingTime",
+            5
+          ],
+          "as": "useChargingTime"
+        },
+        {
+          "operator": "log",
+          "operands": [
+            "$useChargingTime",
+            1.4142135623731
+          ],
+          "as": "logFactor"
+        },
+        {
+          "operator": "subtract",
+          "operands": [
+            14.6464466094067,
+            "$logFactor"
+          ]
+        }
+      ],
+      "display_as": "number",
+      "label": "Balance Speed Factor",
+      "id": "balanceSpeedFactor"
+    },
+    {
+      "type": "derived",
+      "operations": [
+        {
+          "operator": "max",
+          "operands": [
+            "chargingTimeStart",
+            "chargingTimeEnd"
+          ],
+          "as": "useChargingTime"
+        },
+        {
+          "operator": "subtract",
+          "operands": [
+            135,
+            "$useChargingTime"
+          ],
+          "as": "timeWithoutCharging"
+        },
+        {
+          "operator": "sum",
+          "operands": [
+            "teleopConesHigh",
+            "teleopConesMid",
+            "teleopConesLow",
+            "teleopCubesHigh",
+            "teleopCubesMid",
+            "teleopCubesLow"
+          ],
+          "as": "totalTeleop"
+        },
+        {
+          "operator": "divide",
+          "operands": [
+            "$timeWithoutCharging",
+            "$totalTeleop"
+          ],
+          "as": "interimCycleTime"
+        },
+        {
+          "operator": "condition",
+          "operands": [
+            "$interimCycleTime",
+            "$interimCycleTime",
+            160
+          ]
+        }
+      ],
+      "display_as": "number",
+      "label": "Cycle Time",
+      "id": "cycleTime"
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "h2",
+      "label": "Teleop",
+      "id": "teleopLabel"
+    },
+    {
+      "type": "checkbox",
+      "label": "Did they pick up from single substation?",
+      "id": "teleopSingleSubstation"
+    },
+    {
+      "type": "checkbox",
+      "label": "Did they pick up from double substation?",
+      "id": "teleopDoubleSubstation"
+    },
+    {
+      "type": "h3",
+      "label": "Cones",
+      "id": "lblTeleopCones"
+    },
+    {
+      "type": "counterallownegative",
+      "label": "Cones scored high",
+      "id": "teleopConesHigh"
+    },
+    {
+      "type": "counterallownegative",
+      "label": "Cones scored mid",
+      "id": "teleopConesMid"
+    },
+    {
+      "type": "counterallownegative",
+      "label": "Cones scored low",
+      "id": "teleopConesLow"
+    },
+    {
+      "type": "h3",
+      "label": "Cubes",
+      "id": "lblTeleopCubes"
+    },
+    {
+      "type": "counterallownegative",
+      "label": "Cubes scored high",
+      "id": "teleopCubesHigh"
+    },
+    {
+      "type": "counterallownegative",
+      "label": "Cubes scored mid",
+      "id": "teleopCubesMid"
+    },
+    {
+      "type": "counterallownegative",
+      "label": "Cubes scored low",
+      "id": "teleopCubesLow"
+    },
+    {
+      "type": "h3",
+      "label": "Coopertition",
+      "id": "lblTeleopCoopertition"
+    },
+    {
+      "type": "counterallownegative",
+      "label": "Coopertition scores",
+      "id": "teleopCoopertition"
+    },
+    {
+      "type": "h3",
+      "label": "Defense",
+      "id": "lblTeleopDefense"
+    },
+    {
+      "type": "counter",
+      "label": "Pinned opposing robot",
+      "id": "teleopPins"
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "h2",
+      "label": "End game",
+      "id": "endgameLabel"
+    },
+    {
+      "type": "timeslider",
+      "label": "How much time was on the clock when they started balancing?",
+      "id": "chargingTimeStart",
+      "options": {
+        "min": 0,
+        "max": 90,
+        "step": -5
+      }
+    },
+    {
+      "type": "timeslider",
+      "label": "How much time was on the clock when they stopped balancing?",
+      "id": "chargingTimeEnd",
+      "options": {
+        "min": 0,
+        "max": 90,
+        "step": -5
+      }
+    },
+    {
+      "type": "multiselect",
+      "label": "Community / Charging station status",
+      "options": [
+        "N/A",
+        "Parked",
+        "Docked",
+        "Engaged"
+      ],
+      "id": "endgameChargingStation"
+    },
+    {
+      "type": "h3",
+      "label": "Alliance achieved",
+      "id": "endgameAlliance"
+    },
+    {
+      "type": "counter",
+      "label": "Total alliance links",
+      "id": "totalAllianceLinks"
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "h2",
+      "label": "General",
+      "id": "generalLabel"
+    },
+    {
+      "type": "checkbox",
+      "label": "Died during the match (or never started)?",
+      "id": "diedDuringMatch"
+    },
+    {
+      "type": "checkbox",
+      "label": "Recovered from freeze?",
+      "id": "recoveredFromFreeze"
+    },
+    {
+      "type": "checkbox",
+      "label": "Prone to tipping?",
+      "id": "tippy"
+    },
+    {
+      "type": "checkbox",
+      "label": "Apparent Control Issues?",
+      "id": "controlIssues"
+    },
+    {
+      "type": "derived",
+      "operations": [
+        {
+          "operator": "multiply",
+          "operands": [
+            0.5,
+            "recoveredFromFreeze"
+          ],
+          "as": "recover"
+        },
+        {
+          "operator": "subtract",
+          "operands": [
+            1,
+            "diedDuringMatch"
+          ],
+          "as": "1minusdied"
+        },
+        {
+          "operator": "sum",
+          "operands": [
+            "$1minusdied",
+            "$recover"
+          ]
+        }
+      ],
+      "display_as": "number",
+      "label": "Reliability factor",
+      "id": "reliabilityFactor"
+    },
+    {
+      "type": "checkbox",
+      "label": "Outstanding performance? (If so, definitely explain why!)",
+      "id": "outstandingPerformance"
+    },
+    {
+      "type": "checkbox",
+      "label": "returned to community during charging station?",
+      "id": "returned"
+    },
+    {
+      "type": "multiselect",
+      "label": "Penalties",
+      "options": [
+        "none",
+        "yellow",
+        "yellow-carried",
+        "red",
+        "red-carried"
+      ],
+      "id": "penalties"
+    },
+    {
+      "type": "textblock",
+      "label": "Other comments and notes:",
+      "id": "otherNotes"
+    }
+  ]
